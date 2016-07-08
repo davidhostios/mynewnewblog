@@ -1,5 +1,12 @@
-<h1>The Mystic Programmer</h1>
+<div class="modal-header text-center splash-title">
+	<h1>The Mystic Programmer</h1>
+</div>
 
-<p>I'm just a programmer interested in the code of life...</p>
-<%= link_to 'Blog Entries', controller: 'articles' %>
-<%= link_to 'New Article', new_article_path %>
+<div class="container jumbotron text-center">
+	<p>I'm just a programmer interested in the code of life...</p>
+
+	<div id="splash-pg-links">
+		<%= link_to 'Blog Entries', controller: 'articles' %>  | <%= link_to 'New Article', new_article_path %>
+  </div>
+
+</div>

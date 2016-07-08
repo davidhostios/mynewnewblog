@@ -1,20 +1,28 @@
-<h1>Read on, Wayne. Read on, Garth.</h1>
+<div class="modal-header text-center header">	
+	<h1>Blog Posts</h1>
+	<p>By The Mystic Programmer</p>
+</div>
 
-<%= link_to 'New Article', new_article_path %>
+<div class="container jumbotron">
 
-<table>
-	<tr>
-		<th>Title</th>
-		<th>Text</th>
-	</tr>
+	<table class="table">
+		<tr>
+			<th>Title</th>
+			<th>Text</th>
+		</tr>
 
-	<% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Hold on dog, you sure bout that?' } %></td>
-    </tr>
-  <% end %>
-</table>
+		<% @articles.each do |article| %>
+	    <tr>
+	      <td><%= article.title %></td>
+	      <td><%= article.text %></td>
+	      <td><%= link_to 'Show', article_path(article) %></td>
+	      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+	      <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Hold on dog, you sure bout that?' } %></td>
+	    </tr>
+	  <% end %>
+	</table>
+</div>
+
+<div class="btn-lg text-center">
+	<%= link_to 'New Article', new_article_path %>
+</div>

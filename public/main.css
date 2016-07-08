@@ -1,0 +1,47 @@
+body {
+	background-color: steelblue;
+}
+
+#splash-pg-links {
+	font-size: 1.5em;
+}
+
+.modal-header {
+	background-color: inherit;
+}
+
+.modal-header h1 {
+	color: azure;
+	font-size: 5em;
+}
+
+.modal-header p {
+	font-size: 2em;
+	color: azure;
+}
+
+
+.btn-lg a {
+	color: azure;
+}
+
+.jumbotron a {
+	color: steelblue;
+}
+
+.jumbotron p {
+	font-size: 2em;
+}
+
+a {
+	text-align: center;
+	color: azure;
+}
+
+.table a {
+	color: steelblue;
+}
+
+.comment-form {
+	padding: 50px;
+}
